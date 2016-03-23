@@ -5,7 +5,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="174.0" prefWidth="290.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerOfSceneLogIn">
+<Pane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="174.0" prefWidth="290.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.danco.controllers.LoginController">
     <children>
         <TextField fx:id="nameInput" layoutX="118.0" layoutY="75.0" promptText="név" />
         <Text fx:id="txt1" fill="AQUA" layoutX="79.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kérlek add meg a neved!" />

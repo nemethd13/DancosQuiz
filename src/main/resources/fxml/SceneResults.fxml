@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 
-<Pane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="325.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerOfSceneResults">
+<Pane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="325.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.danco.controllers.ResultsController">
     <children>
         <Button id="buttonBack" fx:id="buttonBack" layoutX="22.0" layoutY="281.0" mnemonicParsing="false" onAction="#handleButtonBackClick" style="-fx-background-color: #00FF00; -fx-text-fill: #000000;" text="Vissza" textFill="#ee1616" />
         <TableView fx:id="table" layoutX="22.0" layoutY="26.0" prefHeight="239.0" prefWidth="281.0">

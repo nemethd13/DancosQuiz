@@ -5,7 +5,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="178.0" prefWidth="206.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerOfSceneChooseCategory">
+<Pane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="178.0" prefWidth="206.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.danco.controllers.ChooseCategoryController">
     <children>
         <Text fill="AQUA" layoutX="30.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Válassz kategóriát!" />
         <Button fx:id="buttonContinue" layoutX="75.0" layoutY="132.0" mnemonicParsing="false" onAction="#handleButtonContinueClick" style="-fx-background-color: #00FF00;" text="Tovább" />

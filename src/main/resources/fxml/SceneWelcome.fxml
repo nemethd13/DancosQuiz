@@ -5,7 +5,7 @@
 <?import javafx.scene.text.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="341.0" prefWidth="625.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerOfSceneWelcome">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="341.0" prefWidth="625.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.danco.controllers.WelcomeController">
     <center>
         <Text smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #00ffff;" text="Üdvözlünk a Danco1s Quiz játékban. &#10;Nagyon örülünk neki , hogy minket választottál, reméljük &#10;minden kérdésre helyes választ tudsz adni!" textAlignment="CENTER" wrappingWidth="638.94921875" BorderPane.alignment="CENTER">
          <font>
