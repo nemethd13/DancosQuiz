@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<Pane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="325.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerOfSceneResults">
+    <children>
+        <Button id="buttonBack" fx:id="buttonBack" layoutX="22.0" layoutY="281.0" mnemonicParsing="false" onAction="#handleButtonBackClick" style="-fx-background-color: #00FF00; -fx-text-fill: #000000;" text="Vissza" textFill="#ee1616" />
+        <TableView fx:id="table" layoutX="22.0" layoutY="26.0" prefHeight="239.0" prefWidth="281.0">
+            <columns>
+                <TableColumn fx:id="firstColumn" prefWidth="139.0" text="Játékos" />
+                <TableColumn fx:id="secondColumn" prefWidth="150.0" text="Eredmény" />
+            </columns>
+        </TableView>
+    </children>
+</Pane>

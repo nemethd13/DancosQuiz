@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<questions>
+    <question id="1.1">
+        <theme>Biológia</theme>
+        <quest>Mit nem eszik a jegesmedve?</quest>
+        <ansA>hódot</ansA>
+        <ansB>fókát</ansB>
+        <ansC>bálnát</ansC>
+        <ansD>halat</ansD>
+        <correct>hódot</correct>
+    </question>
+    <question id="1.2">
+        <theme>Biológia</theme>
+        <quest>Mikor vadászik a legtöbb bagoly?</quest>
+        <ansA>nappal</ansA>
+        <ansB>hajnalban</ansB>
+        <ansC>éjszaka</ansC>
+        <ansD>szürkületkor</ansD>
+        <correct>hajnalban</correct>
+    </question>
+    <question id="1.3">
+        <theme>Biológia</theme>
+        <quest>A pókok hány testrésszel és mennyi lábbal rendelkeznek?</quest>
+        <ansA>2 testrész, 6 láb</ansA>
+        <ansB>3 testrész, 8 láb</ansB>
+        <ansC>2 testrész, 8 láb</ansC>
+        <ansD>3 testrész, 6 láb</ansD>
+        <correct>2 testrész, 8 láb</correct>
+    </question>
+    <question id="1.4">
+        <theme>Biológia</theme>
+        <quest>Melyik élőlény nincs?</quest>
+        <ansA> laposféreg</ansA>
+        <ansB>fonalféreg</ansB>
+        <ansC>láncosféreg</ansC>
+        <ansD>gyűrűsféreg</ansD>
+        <correct>láncosféreg</correct>
+    </question>
+    <question id="1.5">
+        <theme>Biológia</theme>
+        <quest>Elsősorban mi okozza a bőr öregedését?</quest>
+        <ansA>helytelen táplálkozás</ansA>
+        <ansB> vízhiány</ansB>
+        <ansC>zsírhiány</ansC>
+        <ansD>napfény</ansD>
+        <correct>napfény</correct>
+    </question>
+    <question id="1.6">
+        <theme>Biológia</theme>
+        <quest>Hány nyakicsigolyája van az embernek?</quest>
+        <ansA>4</ansA>
+        <ansB>8</ansB>
+        <ansC>10</ansC>
+        <ansD>7</ansD>
+        <correct>7</correct>
+    </question>
+    <question id="1.7">
+        <theme>Biológia</theme>
+        <quest>Mi lehet az ekcéma?</quest>
+        <ansA>plazmás sejt</ansA>
+        <ansB>egy sütemény</ansB>
+        <ansC>egyfajta bőrbetegség</ansC>
+        <ansD>ihletett állapot</ansD>
+        <correct>egyfajta bőrbetegség</correct>
+    </question>
+    <question id="1.8">
+        <theme>Biológia</theme>
+        <quest>Hány kilogramm súlyt bír el egy emberi hajszál?</quest>
+        <ansA>0,2</ansA>
+        <ansB>3</ansB>
+        <ansC>1</ansC>
+        <ansD>0,5</ansD>
+        <correct>3</correct>
+    </question>
+    <question id="1.9">
+        <theme>Biológia</theme>
+        <quest>Mi a "kutacs"?</quest>
+        <ansA>lágyrész csecsemők koponyáján</ansA>
+        <ansB>telken ásott kút</ansB>
+        <ansC>elektromos szikragyújtó</ansC>
+        <ansD>víz keresésére használt bot</ansD>
+        <correct>lágyrész csecsemők koponyáján</correct>
+    </question>
+    <question id="1.10">
+        <theme>Biológia</theme>
+        <quest>Mennyit nő az ember haja 24 óra alatt?</quest>
+        <ansA>1 cm</ansA>
+        <ansB>0.35 mm</ansB>
+        <ansC>0.5 mm</ansC>
+        <ansD>0.9 mm</ansD>
+        <correct>0.35 mm</correct>
+    </question>
+    <question id="1.11">
+        <theme>Biológia</theme>
+        <quest>Melyik a legkisebb emberi sejt?</quest>
+        <ansA>hím ivarsejt</ansA>
+        <ansB>petesejt</ansB>
+        <ansC> a bőr sejtjei</ansC>
+        <ansD>agyi idegsejt</ansD>
+        <correct>hím ivarsejt</correct>
+    </question>
+    <question id="1.12">
+        <theme>Biológia</theme>
+        <quest>Melyik gyümölcs képes a vízen úszva akár 4.000 Km is utazni, és ezután kicsírázni?</quest>
+        <ansA>füge</ansA>
+        <ansB>banán</ansB>
+        <ansC>kókuszdió</ansC>
+        <ansD>ananász</ansD>
+        <correct>kókuszdió</correct>
+    </question>
+    <question id="1.13">
+        <theme>Biológia</theme>
+        <quest>Milyen virága volt a Kis Hercegnek?</quest>
+        <ansA>ibolya</ansA>
+        <ansB>hóvirág</ansB>
+        <ansC>rózsa</ansC>
+        <ansD>liliom</ansD>
+        <correct>rózsa</correct>
+    </question>
+    <question id="1.14">
+        <theme>Biológia</theme>
+        <quest>Mit jelent a papsajt?</quest>
+        <ansA> Sajt alakú kristályos kövület</ansA>
+        <ansB>Egy mályva fajta</ansB>
+        <ansC>Egzotikus afrikai gyümölcs</ansC>
+        <ansD>Különleges, érett sajt</ansD>
+        <correct>Egy mályva fajta</correct>
+    </question>
+    <question id="1.15">
+        <theme>Biológia</theme>
+        <quest>Mi a lisztharmat?</quest>
+        <ansA>Növényeket károsító gombás betegség</ansA>
+        <ansB>Tradicionális fehérorosz töményital</ansB>
+        <ansC>Hajnalban a búzán lecsapódó pára</ansC>
+        <ansD>Őszülő hajszálak a halántékon</ansD>
+        <correct>Növényeket károsító gombás betegség</correct>
+    </question>
+    <question id="1.16">
+        <theme>Biológia</theme>
+        <quest>Hol él a Hibiscus trionum?</quest>
+        <ansA>Trópusokon, szubtrópusokon</ansA>
+        <ansB> Meleg vizekben</ansB>
+        <ansC> Hideg vizekben</ansC>
+        <ansD> Csak a déli féltekén</ansD>
+        <correct>Trópusokon, szubtrópusokon</correct>
+    </question>
+    <question id="1.17">
+        <theme>Biológia</theme>
+        <quest>A zuzmók melyik két növény együttéléséből alakulnak ki?</quest>
+        <ansA>moszatok és gombák</ansA>
+        <ansB>algák és mohák</ansB>
+        <ansC>páfrányok és cikászok</ansC>
+        <ansD>páfrányok és cikászok</ansD>
+        <correct>moszatok és gombák</correct>
+    </question>
+    <question id="1.18">
+        <theme>Biológia</theme>
+        <quest>Földünkön rengeteg fajta fa van. Némelyik eléggé hihetetlen tulajdonságokkal rendelkezik. Az alábbiak közül melyik állítás hamis?</quest>
+        <ansA>Az Indiai Banyan fa ellenáll a külső hatásoknak és képes folyamatosan regenerálni önmagát.</ansA>
+        <ansB>A világ legnagyobb Rezgőnyár kolóniáját Pando-nak hívják, 6 millió kilóra és 80ezer évesre becsülik.</ansB>
+        <ansC>A Fülöp-szigetek-i Szivárvány Eukaliptusz kérge zöld, kék, lila, narancssárga és barna szinű.</ansC>
+        <ansD>A Majomkenyérfák leghíresebb együttese, a Majomkenyérfák Útja Észak-Afrikában található.</ansD>
+        <correct>A Majomkenyérfák leghíresebb együttese, a Majomkenyérfák Útja Észak-Afrikában található.</correct>
+    </question>
+    <question id="1.19">
+        <theme>Biológia</theme>
+        <quest>Mi a neve az emberi testben előforduló természetes fájdalomcsillapitonak?</quest>
+        <ansA>ketamin</ansA>
+        <ansB>endorfin</ansB>
+        <ansC>enkephalinok</ansC>
+        <ansD>kapszaicin</ansD>
+        <correct>endorfin</correct>
+    </question>
+    <question id="1.20">
+        <theme>Biológia</theme>
+        <quest>Mit jelent a bárzsing kifejezés?</quest>
+        <ansA>vastagbél</ansA>
+        <ansB>vékonybél</ansB>
+        <ansC>nyelőcső</ansC>
+        <ansD>végbél</ansD>
+        <correct>nyelőcső</correct>
+    </question>
+    <question id="2.1">
+        <theme>Irodalom</theme>
+        <quest>Hol született Ady Endre?</quest>
+        <ansA>Kolozsvárott</ansA>
+        <ansB>Érmindszenten</ansB>
+        <ansC>Debrecenben</ansC>
+        <ansD>Nagyváradon</ansD>
+        <correct>Érmindszenten</correct>
+    </question>
+    <question id="2.2">
+        <theme>Irodalom</theme>
+        <quest>Ki írta a Vuk című regényt?</quest>
+        <ansA>Lengyel Gábor</ansA>
+        <ansB>Fekete István</ansB>
+        <ansC>Gát György</ansC>
+        <ansD>Wolf Péter</ansD>
+        <correct>Fekete István</correct>
+    </question>
+    <question id="2.3">
+        <theme>Irodalom</theme>
+        <quest>"Hass, alkoss, gyarapíts: s a haza fényre derűl!" Mely költőnk tollából származik ez az idézet?</quest>
+        <ansA>Ady Endre</ansA>
+        <ansB>Kölcsey Ferenc</ansB>
+        <ansC>Petőfi Sándor</ansC>
+        <ansD>Arany János</ansD>
+        <correct>Kölcsey Ferenc</correct>
+    </question>
+    <question id="2.4">
+        <theme>Irodalom</theme>
+        <quest>Mi az epigramma?</quest>
+        <ansA>Mértékegység</ansA>
+        <ansB>Rövid, tömör költemény.</ansB>
+        <ansC>Sírkő</ansC>
+        <ansD>Két fogalom tartalmi-hangulati kapcsolatán alapuló szókép.</ansD>
+        <correct>Rövid, tömör költemény.</correct>
+    </question>
+    <question id="2.5">
+        <theme>Irodalom</theme>
+        <quest>A népmesék eredetileg...</quest>
+        <ansA>... felnőtteknek szánt történetek.</ansA>
+        <ansB>...gyerekeknek szánt mesék.</ansB>
+        <ansC>... a Grimm testvérek találmányai.</ansC>
+        <ansD>... Nheep fáraó meséi voltak.</ansD>
+        <correct>... felnőtteknek szánt történetek.</correct>
+    </question>
+    <question id="2.6">
+        <theme>Irodalom</theme>
+        <quest>Melyik háborúról szól a "Nyugaton a helyzet változatlan" című könyv, film?</quest>
+        <ansA>I. világháború</ansA>
+        <ansB>II. világháború</ansB>
+        <ansC>amerikai polgárháború</ansC>
+        <ansD>vietnami háború</ansD>
+        <correct>I. világháború</correct>
+    </question>
+    <question id="2.7">
+        <theme>Irodalom</theme>
+        <quest>Melyik nem költői eszköz az alábbiak közül?</quest>
+        <ansA>szinesztézia</ansA>
+        <ansB>metafora</ansB>
+        <ansC>metonímia</ansC>
+        <ansD>metamorfózis</ansD>
+        <correct>metamorfózis</correct>
+    </question>
+    <question id="2.8">
+        <theme>Irodalom</theme>
+        <quest>Ki írta a VII. eclogát?></quest>
+        <ansA>Ady Endre</ansA>
+        <ansB>Radnóti Miklós</ansB>
+        <ansC>Babits Mihály</ansC>
+        <ansD>József Attila</ansD>
+        <correct>Radnóti Miklós</correct>
+    </question>
+    <question id="2.9">
+        <theme>Irodalom</theme>
+        <quest>Melyik verset NEM Arany János írta?</quest>
+        <ansA>A walesi bárdok</ansA>
+        <ansB>Az apostol</ansB>
+        <ansC>Tetemrehívás</ansC>
+        <ansD>Szondi két apródja</ansD>
+        <correct>Az apostol</correct>
+    </question>
+    <question id="2.10">
+        <theme>Irodalom</theme>
+        <quest>Hová szállott föl a páva Ady versében?</quest>
+        <ansA>a vármegye-házra</ansA>
+        <ansB>a kis padlásra</ansB>
+        <ansC>a templom tornyára</ansC>
+        <ansD>a szalma bálára</ansD>
+        <correct>a vármegye-házra</correct>
+    </question>
+    <question id="2.11">
+        <theme>Irodalom</theme>
+        <quest>Melyik Harry Potter könyvben hal meg Dumbledore?</quest>
+        <ansA>3. rész (azkabani fogoly)</ansA>
+        <ansB>5. rész (Főnix rendje)</ansB>
+        <ansC>6. rész (A félvér herceg)</ansC>
+        <ansD>7. rész (A halál ereklyéi)</ansD>
+        <correct>6. rész (A félvér herceg)</correct>
+    </question>
+    <question id="2.12">
+        <theme>Irodalom</theme>
+        <quest>Gyűrűk Ura c. könyvben ki a törpe?</quest>
+        <ansA>Legolas</ansA>
+        <ansB>Frodó</ansB>
+        <ansC>Gimli</ansC>
+        <ansD>Pippin</ansD>
+        <correct>Gimli</correct>
+    </question>
+    <question id="2.13">
+        <theme>Irodalom</theme>
+        <quest>Mit főzött Fehérlófia, Fanyűvő, Kőmorzsoló és Vasgyúró, amikor a Hétszűnyű Kapanyányimonyók megjelent?</quest>
+        <ansA>Gulyáslevest</ansA>
+        <ansB>Kását</ansB>
+        <ansC>Paprikás krumplit</ansC>
+        <ansD>Pörköltet</ansD>
+        <correct>Kását</correct>
+    </question>
+    <question id="2.14">
+        <theme>Irodalom</theme>
+        <quest>Melyik nép eposza a Kalevala?</quest>
+        <ansA>észt</ansA>
+        <ansB>svéd</ansB>
+        <ansC>magyar</ansC>
+        <ansD>finn</ansD>
+        <correct>finn</correct>
+    </question>
+    <question id="2.15">
+        <theme>Irodalom</theme>
+        <quest>Hogy hívják Victor Hugo Nyomorultak című regényének főhősét?</quest>
+        <ansA>Gwynplaine</ansA>
+        <ansB>Esmeralda</ansB>
+        <ansC>Jean Valjean</ansC>
+        <ansD>Ruy Blas</ansD>
+        <correct>Jean Valjean</correct>
+    </question>
+    <question id="2.16">
+        <theme>Irodalom</theme>
+        <quest>Hogy hívták Don Quijote lovát?</quest>
+        <ansA>Sancho Panza></ansA>
+        <ansB>Táltos</ansB>
+        <ansC>Dulcinea</ansC>
+        <ansD>Rocinante</ansD>
+        <correct>Rocinante</correct>
+    </question>
+    <question id="2.1">
+        <theme>Irodalom</theme>
+        <quest>Az alábbiak közül melyik nem orosz író műve?</quest>
+        <ansA>Goriot apó</ansA>
+        <ansB>Háború és béke</ansB>
+        <ansC>Bűn és bűnhődés</ansC>
+        <ansD>A köpönyeg</ansD>
+        <correct>Goriot apó</correct>
+    </question>
+    <question id="2.18">
+        <theme>Irodalom</theme>
+        <quest>Thomas Mann, német író. Ismertebb művei a Buddenbrook-ház, a Marió és a varázsló. A varázshegy című regényében mi a "varázshegy"?</quest>
+        <ansA>egy fürdőhely híres szórakozóhelye</ansA>
+        <ansB>egy tüdőszanatórium</ansB>
+        <ansC>egy hajó neve</ansC>
+        <ansD>egy hegy</ansD>
+        <correct>egy tüdőszanatórium</correct>
+    </question>
+    <question id="2.19">
+        <theme>Irodalom</theme>
+        <quest>Melyik NEM Umberto Eco műve?</quest>
+        <ansA>Korbács</ansA>
+        <ansB>A rózsa neve</ansB>
+        <ansC>Foucault-inga</ansC>
+        <ansD>A tegnap szigete</ansD>
+        <correct>Korbács</correct>
+    </question>
+    <question id="2.20">
+        <theme>Irodalom</theme>
+        <quest>Ki nem tartozik Agatha Christie nyomozói közé?</quest>
+        <ansA>Jane Marple</ansA>
+        <ansB>Hercule Poirot</ansB>
+        <ansC>Tuppence Beresford</ansC>
+        <ansD>Perry Mason</ansD>
+        <correct>Perry Mason</correct>
+    </question>
+
+</questions>

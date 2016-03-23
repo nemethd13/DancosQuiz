@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="174.0" prefWidth="290.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerOfSceneLogIn">
+    <children>
+        <TextField fx:id="nameInput" layoutX="118.0" layoutY="75.0" promptText="név" />
+        <Text fx:id="txt1" fill="AQUA" layoutX="79.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kérlek add meg a neved!" />
+        <Text fx:id="txt2" fill="AQUA" layoutX="24.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felhasználónév: " />
+        <Button fx:id="buttonStart" layoutX="109.0" layoutY="121.0" mnemonicParsing="false" onAction="#handleButtonStartClick" style="-fx-background-color: #00FF00; -fx-text-fill: #000000;" text="Kezdődhet" textFill="#131413" />
+    </children>
+</Pane>
