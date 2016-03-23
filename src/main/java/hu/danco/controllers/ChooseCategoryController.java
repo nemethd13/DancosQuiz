@@ -14,6 +14,7 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import sun.applet.Main;
 
 public class ChooseCategoryController extends AnchorPane implements Initializable {
 
@@ -78,18 +79,27 @@ public class ChooseCategoryController extends AnchorPane implements Initializabl
             ChosenCategory = "Irodalom";
             System.out.println("Irci");
         }
-        //MainApp.rx.readQuestions();
+    }
+
+    String getSelectedCategory() {
+        if (firstRadioButton.isSelected()) {
+            return "Biológia";
+        } else
+            return "Irodalom";
     }
 
     @FXML
     void handleButtonContinueClick() {
+        String category = getSelectedCategory();
 
+        if (category != null) {
+            MainApp.gameManager.setCurrentCategory(category);
 
-
-
-
-        MainApp.window.setScene(MainApp.SceneGame);
+            MainApp.startGame();
+        }
     }
+
+
 
 
     @Override

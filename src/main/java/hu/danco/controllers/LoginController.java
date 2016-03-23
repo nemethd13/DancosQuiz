@@ -38,6 +38,8 @@ public class LoginController implements Initializable {
 
     @FXML
     void handleButtonStartClick() {
+        MainApp.gameManager.setCurrentUser(nameInput.getText());
+
         MainApp.window.setScene(MainApp.SceneChooseCategory);
     }
 

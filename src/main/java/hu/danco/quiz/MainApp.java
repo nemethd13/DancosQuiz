@@ -1,15 +1,14 @@
 package hu.danco.quiz;
 
+import hu.danco.controllers.GameController;
+import hu.danco.controllers.GameManager;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.InputStream;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.IOException;
 
 /**
  * Created by Németh Dániel on 2016.03.23..
@@ -28,9 +27,34 @@ public class MainApp extends Application {
     public static Scene SceneChooseCategory;
     public static Scene SceneLogIn;
     public static Scene SceneLoose;
+    public static GameManager gameManager;
+
+    public static void startGame() {
+        FXMLLoader loader = new FXMLLoader(
+                MainApp.class.getClassLoader().getResource("fxml/SceneGame.fxml")
+        );
+
+        Parent parent = null;
+        try {
+            parent = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        Scene scene = new Scene(parent);
+
+        GameController gameController =
+                loader.getController();
+
+        gameController.initData();
+
+        window.setScene(scene);
+    }
 
     @Override
     public void start(Stage stage) throws Exception{
+        gameManager = new GameManager();
+
         window = stage;
         root = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/SceneWelcome.fxml"));
         second = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/SceneChooseCategory.fxml"));
