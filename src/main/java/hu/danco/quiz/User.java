@@ -6,9 +6,9 @@ package hu.danco.quiz;
 public class User {
 
     private String user;
-    private String point;
+    private int point;
 
-    public User(String user, String point) {
+    public User(String user, int point) {
         this.user = user;
         this.point = point;
     }
@@ -17,7 +17,7 @@ public class User {
         return user;
     }
 
-    public String getPoint() {
+    public int getPoint() {
         return point;
     }
 
@@ -25,7 +25,7 @@ public class User {
         this.user = user;
     }
 
-    public void setPoint(String point) {
+    public void setPoint(int point) {
         this.point = point;
     }
 

@@ -8,6 +8,7 @@ import javafx.fxml.Initializable;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
@@ -35,11 +36,16 @@ public class ChooseCategoryController extends AnchorPane implements Initializabl
     @FXML
     static String ChosenCategory;
 
-    @FXML String firstQuestion;
-    @FXML String firstAnsA;
-    @FXML String firstAnsB;
-    @FXML String firstAnsC;
-    @FXML String firstAnsD;
+    @FXML
+    String firstQuestion;
+    @FXML
+    String firstAnsA;
+    @FXML
+    String firstAnsB;
+    @FXML
+    String firstAnsC;
+    @FXML
+    String firstAnsD;
 
 //    public ControllerOfSceneChooseCategory() {
 //        //if you want to set a FXML
@@ -71,7 +77,7 @@ public class ChooseCategoryController extends AnchorPane implements Initializabl
     @FXML
     void handleOptions() {
 
-        if(firstRadioButton.isSelected()){
+        if (firstRadioButton.isSelected()) {
             ChosenCategory = "Biológia";
             System.out.println("Biosz");
         }
@@ -98,8 +104,6 @@ public class ChooseCategoryController extends AnchorPane implements Initializabl
             MainApp.startGame();
         }
     }
-
-
 
 
     @Override

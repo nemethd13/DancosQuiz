@@ -19,11 +19,9 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Németh Dániel on 2016.03.23..
- */
+
 public class XmlUserDAO implements UserDAO {
-    private final String XML_FILE = "users.xml";
+    private final String XML_FILE = "C:/Users/Németh Dániel/git/DancosQuiz/users.xml";
 
     @Override
     public List<User> getUsers() {
@@ -44,7 +42,7 @@ public class XmlUserDAO implements UserDAO {
                 Element eElement = (Element) nList.item(i);
 
                 listUsers.add(new User(eElement.getElementsByTagName("username").item(0).getTextContent(),
-                        eElement.getElementsByTagName("questions").item(0).getTextContent()));
+                        Integer.parseInt(eElement.getElementsByTagName("questions").item(0).getTextContent())));
             }
 
             return listUsers;
@@ -78,7 +76,7 @@ public class XmlUserDAO implements UserDAO {
 
                 // point elements
                 Element point = doc.createElement("questions");
-                point.appendChild(doc.createTextNode(users.get(i).getPoint()));
+                point.appendChild(doc.createTextNode(Integer.toString(users.get(i).getPoint())));
                 user.appendChild(point);
             }
 

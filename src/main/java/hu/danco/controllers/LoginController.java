@@ -2,12 +2,17 @@ package hu.danco.controllers;
 
 import hu.danco.quiz.MainApp;
 
+import hu.danco.quiz.XmlUserDAO;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.layout.Pane;
-import javafx.scene.text.Text;
+import javafx.scene.control.*;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.net.URL;
@@ -34,13 +39,26 @@ public class LoginController implements Initializable {
     private Pane panel;
 
     @FXML
+    private VBox errVBox;
+
+    @FXML
     private TextField nameInput;
 
     @FXML
-    void handleButtonStartClick() {
-        MainApp.gameManager.setCurrentUser(nameInput.getText());
+    private Label errorLabel;
 
-        MainApp.window.setScene(MainApp.SceneChooseCategory);
+    @FXML
+    void handleButtonStartClick() {
+
+
+
+        if (!nameInput.getText().equals("")) {
+            MainApp.gameManager.setCurrentUser(nameInput.getText(),0);
+
+            MainApp.window.setScene(MainApp.SceneChooseCategory);
+        } else {
+            errorLabel.setText("Légyszíves add meg a neved!");
+        }
     }
 
 

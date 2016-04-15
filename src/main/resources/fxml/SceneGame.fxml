@@ -23,7 +23,7 @@
                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
             </VBox.margin>
         </Region>
-        <RadioButton fx:id="rb1" mnemonicParsing="false" onAction="#handleButtonNextClick" style="-fx-text-fill: #00ffff;" text="RadioButton">
+        <RadioButton fx:id="rb1" mnemonicParsing="false" onAction="#handleOption" style="-fx-text-fill: #00ffff;" text="RadioButton">
             <VBox.margin>
                 <Insets left="20.0" />
             </VBox.margin>
@@ -36,7 +36,7 @@
                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
             </VBox.margin>
         </Region>
-        <RadioButton fx:id="rb2" mnemonicParsing="false" onAction="#handleButtonNextClick" style="-fx-text-fill: #00ffff;" text="RadioButton" toggleGroup="$answersToggleGroup">
+        <RadioButton fx:id="rb2" mnemonicParsing="false" onAction="#handleOption" style="-fx-text-fill: #00ffff;" text="RadioButton" toggleGroup="$answersToggleGroup">
             <VBox.margin>
                 <Insets left="20.0" />
             </VBox.margin>
@@ -46,7 +46,7 @@
                 <Insets bottom="10.0" top="10.0" />
             </VBox.margin>
         </Region>
-        <RadioButton fx:id="rb3" mnemonicParsing="false" onAction="#handleButtonNextClick" style="-fx-text-fill: #00ffff;" text="RadioButton" toggleGroup="$answersToggleGroup">
+        <RadioButton fx:id="rb3" mnemonicParsing="false" onAction="#handleOption" style="-fx-text-fill: #00ffff;" text="RadioButton" toggleGroup="$answersToggleGroup">
             <VBox.margin>
                 <Insets left="20.0" />
             </VBox.margin>
@@ -56,7 +56,7 @@
                 <Insets bottom="10.0" top="10.0" />
             </VBox.margin>
         </Region>
-        <RadioButton fx:id="rb4" mnemonicParsing="false" onAction="#handleButtonNextClick" style="-fx-text-fill: #00ffff;" text="RadioButton" toggleGroup="$answersToggleGroup">
+        <RadioButton fx:id="rb4" mnemonicParsing="false" onAction="#handleOption" style="-fx-text-fill: #00ffff;" text="RadioButton" toggleGroup="$answersToggleGroup">
             <VBox.margin>
                 <Insets left="20.0" />
             </VBox.margin>

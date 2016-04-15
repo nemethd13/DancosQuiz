@@ -3,10 +3,12 @@ package hu.danco.controllers;
 import hu.danco.quiz.MainApp;
 
 import hu.danco.quiz.Question;
+import hu.danco.quiz.User;
+import hu.danco.quiz.XmlUserDAO;
 import javafx.fxml.Initializable;
-
-import java.awt.event.ActionEvent;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -14,7 +16,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.VBox;
-import sun.applet.Main;
 
 public class GameController implements Initializable {
     @FXML
@@ -38,26 +39,77 @@ public class GameController implements Initializable {
     @FXML
     private Label labelQuestion;
 
+    XmlUserDAO rx = new XmlUserDAO();
+    List<User> jatekos = new ArrayList<>();
+
+    private String chosen = "";
+
     public void initData() {
-       stepQuestion();
+        stepQuestion();
     }
 
     private void stepQuestion() {
+
         Question q = MainApp.gameManager.getNextQuestion();
 
         setLabels(q);
     }
 
     private void setLabels(Question q) {
-        labelQuestion.setText(q.getQuestion());
+        labelQuestion.setText(MainApp.gameManager.getCurrentQuestionIndex() + ". " + q.getQuestion());
         rb1.setText(q.getAnswerA());
         rb2.setText(q.getAnswerB());
         rb3.setText(q.getAnswerC());
         rb4.setText(q.getAnswerD());
-        rb1.setSelected(false);
-        rb2.setSelected(false);
-        rb3.setSelected(false);
-        rb4.setSelected(false);
+    }
+
+
+    @FXML
+    public void handleOption() {
+        
+        if (rb1.isSelected()) {
+            chosen = rb1.getText();
+        }
+        if (rb2.isSelected()) {
+            chosen = rb2.getText();
+        }
+        if (rb3.isSelected()) {
+            chosen = rb3.getText();
+        }
+        if (rb4.isSelected()) {
+            chosen = rb4.getText();
+        }
+
+    }
+
+
+    @FXML
+    void handleButtonNextClick() {
+
+
+
+
+        if (MainApp.gameManager.isAnswerCorrect(chosen)) {
+
+            if (MainApp.gameManager.getCurrentQuestionIndex() != 20) {
+                stepQuestion();
+                rb1.setSelected(false);
+                rb2.setSelected(false);
+                rb3.setSelected(false);
+                rb4.setSelected(false);
+       
+            } else {
+                MainApp.window.close();
+            }
+            
+        } else {
+            MainApp.gameManager.setCurrentUser(MainApp.gameManager.getCurrentUserName(),MainApp.gameManager.getCurrentQuestionIndex()-1);
+
+            jatekos.addAll(rx.getUsers());
+            jatekos.add(MainApp.gameManager.getCurrentUser());
+            rx.persistUsers(jatekos);
+            MainApp.window.setScene(MainApp.SceneLoose);
+        }
 
     }
 
@@ -73,12 +125,6 @@ public class GameController implements Initializable {
         assert panel != null : "fx:id=\"panel\" was not injected: check your FXML file 'SceneGame.fxml'.";
 
     }
-
-    @FXML
-    void handleButtonNextClick() {
-        stepQuestion();
-    }
-
 
 
 }

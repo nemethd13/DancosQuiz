@@ -2,15 +2,23 @@ package hu.danco.controllers;
 
 import hu.danco.quiz.MainApp;
 
+import hu.danco.quiz.User;
+import hu.danco.quiz.XmlQuestionDAO;
+import hu.danco.quiz.XmlUserDAO;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
 
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class ResultsController implements Initializable {
@@ -20,25 +28,28 @@ public class ResultsController implements Initializable {
     @FXML
     private URL location;
     @FXML
-    private TableColumn<?, ?> firstColumn;
+    private TableColumn<User, String> user;
     @FXML
-    private TableColumn<?, ?> secondColumn;
+    private TableColumn<User, Integer> point;
     @FXML
     private Pane panel;
     @FXML
-    private TableView<?> table;
+    private TableView<User> table;
     @FXML
     private Button buttonBack;
-    @FXML
 
+
+    @FXML
     void handleButtonBackClick() {
         MainApp.window.setScene(MainApp.SceneWelcome);
     }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        assert firstColumn != null : "fx:id=\"firstColumn\" was not injected: check your FXML file 'SceneResults.fxml'.";
-        assert secondColumn != null : "fx:id=\"secondColumn\" was not injected: check your FXML file 'SceneResults.fxml'.";
+
+        user.setCellValueFactory(new PropertyValueFactory<>("user"));
+        point.setCellValueFactory(new PropertyValueFactory<>("point"));
+        table.setItems(MainApp.gameManager.getResults());
         assert panel != null : "fx:id=\"panel\" was not injected: check your FXML file 'SceneResults.fxml'.";
         assert table != null : "fx:id=\"table\" was not injected: check your FXML file 'SceneResults.fxml'.";
         assert buttonBack != null : "fx:id=\"buttonBack\" was not injected: check your FXML file 'SceneResults.fxml'.";

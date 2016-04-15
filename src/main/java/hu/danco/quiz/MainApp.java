@@ -10,9 +10,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-/**
- * Created by Németh Dániel on 2016.03.23..
- */
+
 public class MainApp extends Application {
     public static Stage window;
     public Parent root;

@@ -13,9 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Created by Németh Dániel on 2016.03.23..
- */
 public class XmlQuestionDAO implements QuestionDAO {
 
     private final String XML_FILE = "xml/Questions.xml";
