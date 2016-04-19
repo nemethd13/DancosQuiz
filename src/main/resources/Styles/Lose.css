@@ -7,9 +7,9 @@
 
 #helyesLabel{
 -fx-font-family: "Helvetica";
-    -fx-font-size: 12px;
+    -fx-font-size: 14px;
     -fx-font-weight: bold;
-    -fx-text-fill: green;
+    -fx-text-fill: #0aff00;
 }
 #rightAnswer{
 -fx-font-family: "Helvetica";

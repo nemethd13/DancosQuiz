@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.text.*?>
@@ -16,7 +17,7 @@
             <Font size="61.0" />
          </font>
       </Label>
-      <Label fx:id="helyesLabel" text="Helyes válasz :" textFill="#45e84d" />
+      <Label fx:id="helyesLabel" text="Helyes válasz :" textFill="#0aff00" />
       <Label fx:id="rightAnswer" text="Label" textFill="#cd1212">
          <VBox.margin>
             <Insets top="20.0" />
