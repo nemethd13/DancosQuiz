@@ -6,9 +6,9 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="253.0" prefWidth="563.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="358.0" prefWidth="563.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-text-fill: #00ffff;" text="Nyertél !">
+      <Label id="fancytext" alignment="CENTER" contentDisplay="CENTER" stylesheets="@../Styles/Styles.css" text="Nyertél !">
          <font>
             <Font size="81.0" />
          </font>
