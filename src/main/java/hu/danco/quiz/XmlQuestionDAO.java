@@ -2,12 +2,10 @@ package hu.danco.quiz;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import java.io.File;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,9 +27,9 @@ public class XmlQuestionDAO implements QuestionDAO {
             doc.getDocumentElement().normalize();
 
             NodeList nList = doc.getElementsByTagName("question");
-            
+
             for (int i = 0; i < nList.getLength(); i++) {
-                Element eElement = (Element)nList.item(i);
+                Element eElement = (Element) nList.item(i);
 
                 listQuestions.add(new Question(eElement.getElementsByTagName("theme").item(0).getTextContent(),
                         eElement.getElementsByTagName("quest").item(0).getTextContent(),

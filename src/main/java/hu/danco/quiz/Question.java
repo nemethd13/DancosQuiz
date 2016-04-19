@@ -1,8 +1,5 @@
 package hu.danco.quiz;
 
-/**
- * Created by Németh Dániel on 2016.03.23..
- */
 public class Question {
     private String theme;
     private String question;

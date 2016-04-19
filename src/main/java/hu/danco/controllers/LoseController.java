@@ -36,8 +36,15 @@ public class LoseController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
         assert rightAnswer != null : "fx:id=\"rightAnswer\" was not injected: check your FXML file 'SceneLoose.fxml'.";
         assert buttonExit != null : "fx:id=\"buttonExit\" was not injected: check your FXML file 'SceneLoose.fxml'.";
         assert text != null : "fx:id=\"text\" was not injected: check your FXML file 'SceneLoose.fxml'.";
+    }
+
+    public void initData(String helyes) {
+        if (rightAnswer != null) {
+            rightAnswer.setText(helyes);
+        }
     }
 }

@@ -10,7 +10,6 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-
 public class MainApp extends Application {
     public static Stage window;
     public Parent root;
@@ -19,12 +18,14 @@ public class MainApp extends Application {
     public Parent fourth;
     public Parent fifth;
     public Parent sixth;
+
     public static Scene SceneWelcome;
     public static Scene SceneGame;
     public static Scene SceneResults;
     public static Scene SceneChooseCategory;
     public static Scene SceneLogIn;
-    public static Scene SceneLoose;
+    public static Scene SceneWin;
+
     public static GameManager gameManager;
 
     public static void startGame() {
@@ -41,8 +42,7 @@ public class MainApp extends Application {
 
         Scene scene = new Scene(parent);
 
-        GameController gameController =
-                loader.getController();
+        GameController gameController = loader.getController();
 
         gameController.initData();
 
@@ -50,7 +50,7 @@ public class MainApp extends Application {
     }
 
     @Override
-    public void start(Stage stage) throws Exception{
+    public void start(Stage stage) throws Exception {
         gameManager = new GameManager();
 
         window = stage;
@@ -59,14 +59,14 @@ public class MainApp extends Application {
         third = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/SceneResults.fxml"));
         fourth = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/SceneGame.fxml"));
         fifth = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/SceneLogIn.fxml"));
-        sixth = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/SceneLoose.fxml"));
+        sixth = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/SceneWin.fxml"));
 
         SceneWelcome = new Scene(root);
         SceneChooseCategory = new Scene(second);
         SceneResults = new Scene(third);
         SceneGame = new Scene(fourth);
         SceneLogIn = new Scene(fifth);
-        SceneLoose = new Scene(sixth);
+        SceneWin = new Scene(sixth);
 
         window.setTitle("Danco's Quiz");
         window.setScene(SceneWelcome);
