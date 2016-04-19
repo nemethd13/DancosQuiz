@@ -49,7 +49,7 @@ public class XmlUserDAO implements UserDAO {
         } catch (Exception e) {
             e.printStackTrace();
 
-            return null;
+            return new ArrayList<User>();
         }
     }
 
