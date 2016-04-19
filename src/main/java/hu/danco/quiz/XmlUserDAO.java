@@ -21,7 +21,7 @@ import java.util.List;
 
 
 public class XmlUserDAO implements UserDAO {
-    private final String XML_FILE = "C:/Users/Németh Dániel/git/DancosQuiz/users.xml";
+    private final String XML_FILE = "users.xml";
 
     @Override
     public List<User> getUsers() {
