@@ -15,8 +15,14 @@
     <bottom>
         <Pane prefHeight="109.0" prefWidth="625.0" BorderPane.alignment="CENTER">
             <children>
-                <Button id="buttonGame" fx:id="buttonGame" layoutX="165.0" layoutY="34.0" mnemonicParsing="false" onAction="#handleButtonGameAction" style="-fx-background-color: #00FF00; -fx-text-fill: #000000;" text="Játék" textFill="#137000" />
-                <Button id="buttonResults" fx:id="buttonResults" layoutX="381.0" layoutY="34.0" mnemonicParsing="false" onAction="#handleButtonResultsAction" style="-fx-background-color: #FFD700; -fx-text-fill: #000000;" text="Eredmények" textFill="#f8ec07" />
+                <Button id="buttonGame" fx:id="buttonGame" layoutX="93.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleButtonGameAction" prefHeight="46.0" prefWidth="115.0" style="-fx-background-color: #00FF00; -fx-text-fill: #000000;" text="Játék" textFill="#137000">
+               <font>
+                  <Font size="28.0" />
+               </font></Button>
+                <Button id="buttonResults" fx:id="buttonResults" layoutX="338.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleButtonResultsAction" prefHeight="60.0" prefWidth="203.0" style="-fx-background-color: #FFD700; -fx-text-fill: #000000;" text="Eredmények" textFill="#f8ec07">
+               <font>
+                  <Font size="28.0" />
+               </font></Button>
             </children>
         </Pane>
     </bottom>
