@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="201.0" prefWidth="290.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.danco.controllers.LoginController">
+<Pane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="201.0" prefWidth="290.0" stylesheets="@../Styles/LogIn.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.danco.controllers.LoginController">
     <children>
         <TextField fx:id="nameInput" layoutX="118.0" layoutY="75.0" promptText="név" />
-        <Text fx:id="txt1" fill="AQUA" layoutX="79.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kérlek add meg a neved!" />
-        <Text fx:id="txt2" fill="AQUA" layoutX="24.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felhasználónév: " />
-        <Button fx:id="buttonStart" layoutX="109.0" layoutY="155.0" mnemonicParsing="false" onAction="#handleButtonStartClick" style="-fx-background-color: #00FF00; -fx-text-fill: #000000;" text="Kezdődhet" textFill="#131413" />
+        <Text fx:id="txt1" fill="#212222" layoutX="58.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kérlek add meg a neved!" />
+        <Text fx:id="txt2" fill="#060707" layoutX="14.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felhasználónév: " />
       <VBox fx:id="errorVBox" alignment="CENTER" layoutX="18.0" layoutY="108.0" prefHeight="35.0" prefWidth="257.0">
          <children>
-            <Label fx:id="errorLabel" textFill="#fc1c1c" />
+            <Label fx:id="errorLabel" textFill="#fc1c1c">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin></Label>
          </children>
       </VBox>
+        <Button fx:id="buttonStart" layoutX="81.0" layoutY="142.0" mnemonicParsing="false" onAction="#handleButtonStartClick" prefHeight="23.0" prefWidth="131.0" text="Kezdődhet" textFill="#131413" />
     </children>
 </Pane>

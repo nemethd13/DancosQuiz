@@ -5,9 +5,9 @@
 <?import javafx.scene.text.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="341.0" prefWidth="625.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.danco.controllers.WelcomeController">
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="341.0" prefWidth="625.0" stylesheets="@../Styles/Welcome.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.danco.controllers.WelcomeController">
     <center>
-        <Text smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #00ffff;" text="Üdvözlünk a Danco1s Quiz játékban. &#10;Nagyon örülünk neki , hogy minket választottál, reméljük &#10;minden kérdésre helyes választ tudsz adni!" textAlignment="CENTER" wrappingWidth="638.94921875" BorderPane.alignment="CENTER">
+        <Text fx:id="welcomeText" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Üdvözlünk a Danco1s Quiz játékban. &#10;Nagyon örülünk neki , hogy minket választottál, reméljük &#10;minden kérdésre helyes választ tudsz adni!" textAlignment="CENTER" wrappingWidth="638.94921875" BorderPane.alignment="CENTER">
          <font>
             <Font size="24.0" />
          </font></Text>
@@ -15,11 +15,11 @@
     <bottom>
         <Pane prefHeight="109.0" prefWidth="625.0" BorderPane.alignment="CENTER">
             <children>
-                <Button id="buttonGame" fx:id="buttonGame" layoutX="93.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleButtonGameAction" prefHeight="46.0" prefWidth="115.0" stylesheets="@../Styles/Styles2.css" text="Játék" textFill="#137000">
+                <Button id="buttonGame" fx:id="buttonGame" layoutX="93.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleButtonGameAction" prefHeight="46.0" prefWidth="115.0" text="Játék" textFill="#137000">
                <font>
                   <Font size="28.0" />
                </font></Button>
-                <Button id="buttonResults" fx:id="buttonResults" layoutX="338.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleButtonResultsAction" prefHeight="60.0" prefWidth="203.0" stylesheets="@../Styles/Styles2.css" text="Eredmények" textFill="#f8ec07">
+                <Button id="buttonResults" fx:id="buttonResults" layoutX="338.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleButtonResultsAction" prefHeight="60.0" prefWidth="203.0" text="Eredmények" textFill="#f8ec07">
                <font>
                   <Font size="28.0" />
                </font></Button>

@@ -123,7 +123,7 @@ public class GameController implements Initializable {
 
             stage = (Stage) buttonNext.getScene().getWindow();
 
-            FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("fxml/SceneLoose.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("fxml/SceneLose.fxml"));
 
             root = (Parent) loader.load();
             loader.<LoseController>getController().initData(helyes);

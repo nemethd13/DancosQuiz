@@ -1,0 +1,19 @@
+#nyertel{
+    -fx-font: 100px Tahoma;
+    -fx-fill: linear-gradient(from 0% 0% to 100% 200%, repeat, aqua 0%, green 70%);
+    -fx-stroke: black;
+    -fx-stroke-width: 1;
+}
+
+#gratula{
+-fx-font-family: "Helvetica";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(from 0% 0% to 100% 200%, repeat, aqua 0%, green 70%);
+
+}
+
+#panel{
+    -fx-background-color:
+            linear-gradient(black,#383838);
+ }

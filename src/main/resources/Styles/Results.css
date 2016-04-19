@@ -1,0 +1,29 @@
+#buttonBack {
+    -fx-background-color:
+            linear-gradient(red,black),
+            linear-gradient(red,black),
+            linear-gradient(red,black),
+            linear-gradient(Black,red);
+    -fx-background-insets: 0,1,4,5,6;
+    -fx-background-radius: 9,8,5,4,3;
+    -fx-padding: 10 20 10 20;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+}
+
+.table-cell {
+    -fx-background-color: linear-gradient(black,#383838);
+
+-fx-font-family: "Helvetica";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(#00ffff,white);
+}
+
+#panel{
+    -fx-background-color:
+            linear-gradient(black,#383838);
+}
