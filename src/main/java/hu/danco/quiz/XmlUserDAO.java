@@ -1,5 +1,8 @@
 package hu.danco.quiz;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -21,6 +24,9 @@ import java.util.List;
 
 
 public class XmlUserDAO implements UserDAO {
+
+    private static final Logger logger = LoggerFactory.getLogger(XmlUserDAO.class);
+
     private final String XML_FILE = "users.xml";
 
     @Override
@@ -47,7 +53,8 @@ public class XmlUserDAO implements UserDAO {
 
             return listUsers;
         } catch (Exception e) {
-            e.printStackTrace();
+
+            logger.warn(" A fájl {} nem olvasható , nincsenek korábbi eredmények.", XML_FILE);
 
             return new ArrayList<User>();
         }

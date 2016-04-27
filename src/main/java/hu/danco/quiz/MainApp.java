@@ -1,5 +1,9 @@
 package hu.danco.quiz;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
 import hu.danco.controllers.GameController;
 import hu.danco.controllers.GameManager;
 import javafx.application.Application;
@@ -11,6 +15,9 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class MainApp extends Application {
+
+    private static final Logger logger = LoggerFactory.getLogger(MainApp.class);
+
     public static Stage window;
     public Parent root;
     public Parent second;
@@ -51,6 +58,8 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
+        logger.info("A játék elkezdődött.");
+
         gameManager = new GameManager();
 
         window = stage;
