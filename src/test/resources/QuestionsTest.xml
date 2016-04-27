@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<questions>
+    <question id="1.1">
+        <theme>Biológia</theme>
+        <quest>Mit nem eszik a jegesmedve?</quest>
+        <ansA>hódot</ansA>
+        <ansB>fókát</ansB>
+        <ansC>bálnát</ansC>
+        <ansD>halat</ansD>
+        <correct>hódot</correct>
+    </question>
+</questions>

@@ -9,7 +9,8 @@ import java.util.List;
 
 
 public class GameManager {
-
+    private final String QUESTION_XML_FILE = "xml/Questions.xml";
+    
     private User currentUser = null;
     private String currentCategory;
     private QuestionDAO questionDAO;
@@ -17,7 +18,7 @@ public class GameManager {
     private int currentQuestionIndex;
 
     public GameManager() {
-        questionDAO = new XmlQuestionDAO();
+        questionDAO = new XmlQuestionDAO(QUESTION_XML_FILE);
 
         currentQuestionIndex = 0;
     }

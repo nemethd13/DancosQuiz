@@ -1,5 +1,7 @@
 package hu.danco.quiz;
 
+import java.util.Objects;
+
 public class Question {
     private String theme;
     private String question;
@@ -78,5 +80,51 @@ public class Question {
     @Override
     public String toString() {
         return "Questions{" + "theme=" + theme + ", question=" + question + ", answerA=" + answerA + ", answerB=" + answerB + ", answerC=" + answerC + ", answerD=" + answerD + ", correct=" + correct + '}';
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 89 * hash + Objects.hashCode(this.theme);
+        hash = 89 * hash + Objects.hashCode(this.question);
+        hash = 89 * hash + Objects.hashCode(this.answerA);
+        hash = 89 * hash + Objects.hashCode(this.answerB);
+        hash = 89 * hash + Objects.hashCode(this.answerC);
+        hash = 89 * hash + Objects.hashCode(this.answerD);
+        hash = 89 * hash + Objects.hashCode(this.correct);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Question other = (Question) obj;
+        if (!Objects.equals(this.theme, other.theme)) {
+            return false;
+        }
+        if (!Objects.equals(this.question, other.question)) {
+            return false;
+        }
+        if (!Objects.equals(this.answerA, other.answerA)) {
+            return false;
+        }
+        if (!Objects.equals(this.answerB, other.answerB)) {
+            return false;
+        }
+        if (!Objects.equals(this.answerC, other.answerC)) {
+            return false;
+        }
+        if (!Objects.equals(this.answerD, other.answerD)) {
+            return false;
+        }
+        if (!Objects.equals(this.correct, other.correct)) {
+            return false;
+        }
+        return true;
     }
 }

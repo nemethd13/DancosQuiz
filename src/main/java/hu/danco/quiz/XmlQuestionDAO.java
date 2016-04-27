@@ -13,13 +13,17 @@ import java.util.stream.Collectors;
 
 public class XmlQuestionDAO implements QuestionDAO {
 
-    private final String XML_FILE = "xml/Questions.xml";
+    private final String xmlFile;
+    
+    public XmlQuestionDAO(String xmlFile) {
+        this.xmlFile = xmlFile;
+    }
 
     public List<Question> readQuestions() {
         try {
             List<Question> listQuestions = new ArrayList<>();
 
-            InputStream is = this.getClass().getClassLoader().getResourceAsStream(XML_FILE);
+            InputStream is = this.getClass().getClassLoader().getResourceAsStream(xmlFile);
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(is);
