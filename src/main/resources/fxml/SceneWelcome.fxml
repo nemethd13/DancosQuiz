@@ -7,7 +7,7 @@
 
 <BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="341.0" prefWidth="625.0" stylesheets="@../Styles/Welcome.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.danco.controllers.WelcomeController">
     <center>
-        <Text fx:id="welcomeText" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Üdvözlünk a Danco1s Quiz játékban. &#10;Nagyon örülünk neki , hogy minket választottál, reméljük &#10;minden kérdésre helyes választ tudsz adni!" textAlignment="CENTER" wrappingWidth="638.94921875" BorderPane.alignment="CENTER">
+        <Text fx:id="welcomeText" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Üdvözlünk a Danco's Quiz játékban. &#10;Nagyon örülünk neki , hogy minket választottál, reméljük &#10;minden kérdésre helyes választ tudsz adni!" textAlignment="CENTER" wrappingWidth="638.94921875" BorderPane.alignment="CENTER">
          <font>
             <Font size="24.0" />
          </font></Text>

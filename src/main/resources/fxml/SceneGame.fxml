@@ -16,7 +16,7 @@
         </Region>
         <Label fx:id="labelQuestion" style="-fx-text-fill: #00ffff;" text="Label">
             <VBox.margin>
-                <Insets bottom="20.0" left="20.0" />
+                <Insets left="20.0" />
             </VBox.margin>
         </Label>
         <Region>
