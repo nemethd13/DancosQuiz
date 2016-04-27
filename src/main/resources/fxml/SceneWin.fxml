@@ -6,7 +6,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox fx:id="panel" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="292.0" prefWidth="563.0" stylesheets="@../Styles/Win.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<VBox fx:id="panel" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="292.0" prefWidth="651.0" stylesheets="@../Styles/Win.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Text fx:id="nyertel" strokeType="OUTSIDE" strokeWidth="0.0" text="Nyertél !" />
       <Label fx:id="gratula" text="Gratulálnuk ! A választott kategória összes kérdésére helyesen válaszoltál !" textFill="#0bfc07">

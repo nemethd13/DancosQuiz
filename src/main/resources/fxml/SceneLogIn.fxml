@@ -6,26 +6,26 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="201.0" prefWidth="290.0" stylesheets="@../Styles/LogIn.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.danco.controllers.LoginController">
+<Pane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="201.0" prefWidth="369.0" stylesheets="@../Styles/LogIn.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.danco.controllers.LoginController">
     <children>
-        <Text fx:id="txt1" fill="#212222" layoutX="58.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kérlek add meg a neved!" />
-      <VBox fx:id="errorVBox" alignment="CENTER" layoutX="18.0" layoutY="108.0" prefHeight="35.0" prefWidth="257.0">
+        <Text fx:id="txt1" fill="#212222" layoutX="97.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kérlek add meg a neved!" />
+      <VBox fx:id="errorVBox" alignment="CENTER" layoutX="56.0" layoutY="108.0" prefHeight="35.0" prefWidth="257.0">
          <children>
-            <Label fx:id="errorLabel" text="Vmi" textFill="#fc1c1c">
+            <Label fx:id="errorLabel" textFill="#fc1c1c">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin></Label>
          </children>
       </VBox>
-        <Button fx:id="buttonStart" layoutX="81.0" layoutY="142.0" mnemonicParsing="false" onAction="#handleButtonStartClick" prefHeight="23.0" prefWidth="131.0" text="Kezdődhet" textFill="#131413" />
-      <HBox layoutX="18.0" layoutY="68.0" prefHeight="40.0" prefWidth="257.0">
+        <Button fx:id="buttonStart" layoutX="119.0" layoutY="143.0" mnemonicParsing="false" onAction="#handleButtonStartClick" prefHeight="23.0" prefWidth="131.0" text="Kezdődhet" textFill="#131413" />
+      <HBox alignment="CENTER" layoutX="18.0" layoutY="68.0" prefHeight="40.0" prefWidth="319.0">
          <children>
               <Text fx:id="txt2" fill="#060707" strokeType="OUTSIDE" strokeWidth="0.0" text="Felhasználónév: ">
                <HBox.margin>
                   <Insets right="10.0" />
                </HBox.margin>
             </Text>
-              <TextField fx:id="nameInput" promptText="név" />
+              <TextField fx:id="nameInput" prefHeight="25.0" prefWidth="179.0" promptText="név" />
          </children>
       </HBox>
     </children>

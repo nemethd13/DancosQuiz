@@ -79,11 +79,11 @@ public class ChooseCategoryController extends AnchorPane implements Initializabl
 
         if (firstRadioButton.isSelected()) {
             ChosenCategory = "Biológia";
-            System.out.println("Biosz");
+
         }
         if (secondRadioButton.isSelected()) {
             ChosenCategory = "Irodalom";
-            System.out.println("Irci");
+
         }
     }
 

@@ -246,7 +246,7 @@
     </question>
     <question id="2.8">
         <theme>Irodalom</theme>
-        <quest>Ki írta a VII. eclogát?></quest>
+        <quest>Ki írta a VII. eclogát?</quest>
         <ansA>Ady Endre</ansA>
         <ansB>Radnóti Miklós</ansB>
         <ansC>Babits Mihály</ansC>
@@ -336,7 +336,7 @@
     </question>
     <question id="2.18">
         <theme>Irodalom</theme>
-        <quest>Thomas Mann, német író. Ismertebb művei a Buddenbrook-ház, a Marió és a varázsló. A varázshegy című regényében mi a "varázshegy"?</quest>
+        <quest>Thomas Mann, német író. A varázshegy című regényében mi a "varázshegy"?</quest>
         <ansA>egy fürdőhely híres szórakozóhelye</ansA>
         <ansB>egy tüdőszanatórium</ansB>
         <ansC>egy hajó neve</ansC>
