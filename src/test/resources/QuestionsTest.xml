@@ -10,4 +10,14 @@
         <ansD>halat</ansD>
         <correct>hódot</correct>
     </question>
+
+    <question id="2.4">
+        <theme>Irodalom</theme>
+        <quest>Mi az epigramma?</quest>
+        <ansA>Mértékegység</ansA>
+        <ansB>Rövid, tömör költemény.</ansB>
+        <ansC>Sírkő</ansC>
+        <ansD>Két fogalom tartalmi-hangulati kapcsolatán alapuló szókép.</ansD>
+        <correct>Rövid, tömör költemény.</correct>
+    </question>
 </questions>

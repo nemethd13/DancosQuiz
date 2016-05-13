@@ -15,10 +15,10 @@ import org.junit.Before;
  * @author Németh Dániel
  */
 public class GameManagerTest {
+
     private GameManager gameManager;
     
-    public GameManagerTest() {
-    }
+    public GameManagerTest() {}
     
     @Before
     public void setUp() {
@@ -27,7 +27,7 @@ public class GameManagerTest {
     
     @Test
     public void testGetCurrentUserName() {
-        String name = "Danco";
+        String name = "Test";
         int point = 10;
         
         gameManager.setCurrentUser(name, point);
@@ -37,10 +37,22 @@ public class GameManagerTest {
     
     @Test
     public void testGetCurrentUser() {
-        User u = new User("Danco", 10);
+        User expResult = new User("Test", 10);
         
-        gameManager.setCurrentUser("Danco", 10);
+        gameManager.setCurrentUser("Test", 10);
         
-        assertEquals("A megadott User objektumot kell visszaadnia.", u, gameManager.getCurrentUser());
+        assertEquals("A megadott User objektumot kell visszaadnia.", expResult, gameManager.getCurrentUser());
     }
+
+    @Test
+    public void testSetCurrentUser() {
+        User expResult = new User("Test",10);
+
+        gameManager.setCurrentUser("Test",10);
+
+        assertEquals("A megadott User objektumot kell visszadnia.", expResult, gameManager.getCurrentUser());
+    }
+
+
+
 }

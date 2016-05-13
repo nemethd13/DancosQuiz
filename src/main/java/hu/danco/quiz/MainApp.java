@@ -3,7 +3,6 @@ package hu.danco.quiz;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
 import hu.danco.controllers.GameController;
 import hu.danco.controllers.GameManager;
 import javafx.application.Application;
@@ -58,6 +57,7 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
+
         logger.info("A játék elkezdődött.");
 
         gameManager = new GameManager();

@@ -7,8 +7,8 @@ import javafx.collections.ObservableList;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class GameManager {
+
     private final String QUESTION_XML_FILE = "xml/Questions.xml";
     
     private User currentUser = null;
@@ -41,10 +41,6 @@ public class GameManager {
         questions = questionDAO.readQuestions(currentCategory);
     }
 
-//    public String getCurrentRightAnswer() {
-//        return questions.get(currentQuestionIndex).getCorrect();
-//    }
-
     public String getRightAnswerWhenLoose() {
         return questions.get(currentQuestionIndex - 1).getCorrect();
     }
@@ -66,7 +62,7 @@ public class GameManager {
     }
 
     public ObservableList<User> getResults() {
-        XmlUserDAO xu = new XmlUserDAO();
+        XmlUserDAO xu = new XmlUserDAO("users.xml");
         List<User> lista = new ArrayList<>();
 
         lista = xu.getUsers();

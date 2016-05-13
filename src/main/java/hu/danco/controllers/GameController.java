@@ -1,28 +1,28 @@
 package hu.danco.controllers;
 
-        import hu.danco.quiz.MainApp;
+import hu.danco.quiz.MainApp;
 
-        import hu.danco.quiz.Question;
-        import hu.danco.quiz.User;
-        import hu.danco.quiz.XmlUserDAO;
-        import javafx.fxml.FXMLLoader;
-        import javafx.fxml.Initializable;
+import hu.danco.quiz.Question;
+import hu.danco.quiz.User;
+import hu.danco.quiz.XmlUserDAO;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 
-        import java.io.IOException;
-        import java.net.URL;
-        import java.util.ArrayList;
-        import java.util.List;
-        import java.util.ResourceBundle;
+import java.io.IOException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ResourceBundle;
 
-        import javafx.fxml.FXML;
-        import javafx.scene.Parent;
-        import javafx.scene.Scene;
-        import javafx.scene.control.Button;
-        import javafx.scene.control.Label;
-        import javafx.scene.control.RadioButton;
-        import javafx.scene.control.ToggleGroup;
-        import javafx.scene.layout.VBox;
-        import javafx.stage.Stage;
+import javafx.fxml.FXML;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 public class GameController implements Initializable {
     @FXML
@@ -46,7 +46,7 @@ public class GameController implements Initializable {
     @FXML
     private Label labelQuestion;
 
-    XmlUserDAO rx = new XmlUserDAO();
+    XmlUserDAO rx = new XmlUserDAO("users.xml");
     List<User> jatekos = new ArrayList<>();
 
     private String helyes = "";

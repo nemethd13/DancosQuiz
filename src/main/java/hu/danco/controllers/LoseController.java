@@ -14,25 +14,24 @@ public class LoseController implements Initializable {
 
     @FXML
     private ResourceBundle resources;
-
     @FXML
     private URL location;
-
     @FXML
     private Label rightAnswer;
-
     @FXML
     private Button buttonExit;
-
     @FXML
     private Label text;
-
     @FXML
     void handleExitButtonClick() {
         MainApp.window.close();
     }
 
-
+    public void initData(String helyes) {
+        if (rightAnswer != null) {
+            rightAnswer.setText(helyes);
+        }
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -42,9 +41,4 @@ public class LoseController implements Initializable {
         assert text != null : "fx:id=\"text\" was not injected: check your FXML file 'SceneLose.fxml'.";
     }
 
-    public void initData(String helyes) {
-        if (rightAnswer != null) {
-            rightAnswer.setText(helyes);
-        }
-    }
 }

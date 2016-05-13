@@ -26,19 +26,27 @@ import java.util.List;
 public class XmlUserDAO implements UserDAO {
 
     private static final Logger logger = LoggerFactory.getLogger(XmlUserDAO.class);
+//
+//    private final String XML_FILE = "users.xml";
 
-    private final String XML_FILE = "users.xml";
+    private final String xmlFile;
+
+    public XmlUserDAO(String xmlFile) {
+        this.xmlFile = xmlFile;
+    }
+
 
     @Override
     public List<User> getUsers() {
         try {
             List<User> listUsers = new ArrayList<>();
 
-            File fXmlFile = new File(XML_FILE);
+          File is = new File(xmlFile);
 
+//            InputStream is = this.getClass().getClassLoader().getResourceAsStream(xmlFile);
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-            Document doc = dBuilder.parse(fXmlFile);
+            Document doc = dBuilder.parse(is);
 
             doc.getDocumentElement().normalize();
 
@@ -54,7 +62,7 @@ public class XmlUserDAO implements UserDAO {
             return listUsers;
         } catch (Exception e) {
 
-            logger.warn(" A fájl {} nem olvasható , nincsenek korábbi eredmények.", XML_FILE);
+            logger.warn(" A fájl {} nem olvasható , nincsenek korábbi eredmények.", xmlFile);
 
             return new ArrayList<User>();
         }
@@ -91,7 +99,7 @@ public class XmlUserDAO implements UserDAO {
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
             DOMSource source = new DOMSource(doc);
-            StreamResult result = new StreamResult(new File(XML_FILE));
+            StreamResult result = new StreamResult(new File(xmlFile));
 
             // Output to console for testing
             // StreamResult result = new StreamResult(System.out);

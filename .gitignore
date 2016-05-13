@@ -1,3 +1,6 @@
 dependency-reduced-pom.xml
 target/
 users.xml
+userTest.xml
+.idea/
+*.iml
