@@ -2,28 +2,64 @@ package hu.danco.quiz;
 
 import java.util.Objects;
 
+/**
+ * Egy felhasználót reprezentáló osztály.
+ */
+
 public class User {
 
     private String user;
     private int point;
 
+    /**
+     * Konstruktor egy User objektum létrehozására.
+     * 
+     * @param user
+     * @param point 
+     */
+    
     public User(String user, int point) {
         this.user = user;
         this.point = point;
     }
 
+    /**
+     * Visszaadja a felhasználó nevét.
+     * 
+     * @return a felhasználó neve 
+     */
+    
     public String getUser() {
         return user;
     }
 
+    /**
+     * Visszadja a felhasználó által helyesen
+     * megválaszolt kérdések számát.
+     * 
+     * @return helyes válaszok darabszáma
+     */
+    
     public int getPoint() {
         return point;
     }
 
+    /**
+     * Beállítja a felhasználó nevét.
+     * 
+     * @param user felhasználó neve 
+     */
+    
     public void setUser(String user) {
         this.user = user;
     }
 
+    /**
+     * Beállítja a felhasználó helyes válaszainak számát.
+     * 
+     * @param point helyes válaszok száma 
+     */
+    
     public void setPoint(int point) {
         this.point = point;
     }
