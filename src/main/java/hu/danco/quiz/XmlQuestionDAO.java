@@ -11,10 +11,24 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Ez az osztály a QuestionDAO interfész implementációja.
+ * 
+ */
+
 public class XmlQuestionDAO implements QuestionDAO {
 
+    /**
+     * Egy konstans változó, az {@code xml} fájl élérési útjának tárolására.
+     */
     private final String xmlFile;
     
+    /**
+     * Konstruktor egy {@code XmlQuestionDao} objektum létrehozására.
+     * 
+     * @param xmlFile a feldolgozni kívánt {@code xml} fájl
+     * elérési útvonala
+     */
     public XmlQuestionDAO(String xmlFile) {
         this.xmlFile = xmlFile;
     }

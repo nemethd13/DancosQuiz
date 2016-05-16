@@ -12,10 +12,12 @@ public class User {
     private int point;
 
     /**
-     * Konstruktor egy User objektum létrehozására.
+     * Konstruktor egy {@code User} objektum létrehozására.
      * 
-     * @param user
-     * @param point 
+     * @param user a felhasználó neve
+     * 
+     * @param point a felhasználó által helyesen emgválaszolt
+     * kérdések darabszáma
      */
     
     public User(String user, int point) {
@@ -37,7 +39,7 @@ public class User {
      * Visszadja a felhasználó által helyesen
      * megválaszolt kérdések számát.
      * 
-     * @return helyes válaszok darabszáma
+     * @return helyesen megválaszolt válaszok darabszáma
      */
     
     public int getPoint() {

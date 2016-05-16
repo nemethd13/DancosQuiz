@@ -1,5 +1,6 @@
 /**
- * Az applikációt mozgató osztályok halmaza ez a csomag.
+ * A model osztályokat, az adatbázist feldolgozó interfészeket,
+ * azok implementációit és a main class-t tartalmazó csomag.
  */
 
 package hu.danco.quiz;

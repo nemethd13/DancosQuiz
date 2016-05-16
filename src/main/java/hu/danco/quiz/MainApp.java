@@ -13,6 +13,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/** 
+ * A QuizGame applikáció main osztálya.
+ */
+
 public class MainApp extends Application {
 
     private static final Logger logger = LoggerFactory.getLogger(MainApp.class);

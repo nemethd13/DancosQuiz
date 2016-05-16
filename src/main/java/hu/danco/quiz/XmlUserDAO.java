@@ -22,15 +22,28 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Ez az osztály a UserDao implementációja.
+ * 
+ */
 
 public class XmlUserDAO implements UserDAO {
 
     private static final Logger logger = LoggerFactory.getLogger(XmlUserDAO.class);
-//
-//    private final String XML_FILE = "users.xml";
 
+     /**
+     * Egy konstans változó, az {@code xml} fájl élérési útjának tárolására.
+     */
+    
     private final String xmlFile;
 
+     /**
+     * Konstruktor egy {@code XmlQuestionDao} objektum létrehozására.
+     * 
+     * @param xmlFile a feldolgozni kívánt {@code xml} fájl
+     * elérési útvonala
+     */
+    
     public XmlUserDAO(String xmlFile) {
         this.xmlFile = xmlFile;
     }
@@ -43,7 +56,6 @@ public class XmlUserDAO implements UserDAO {
 
           File is = new File(xmlFile);
 
-//            InputStream is = this.getClass().getClassLoader().getResourceAsStream(xmlFile);
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(is);
@@ -102,7 +114,6 @@ public class XmlUserDAO implements UserDAO {
             StreamResult result = new StreamResult(new File(xmlFile));
 
             // Output to console for testing
-            // StreamResult result = new StreamResult(System.out);
             transformer.transform(source, result);
 
 
