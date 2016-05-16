@@ -4,7 +4,7 @@ import java.util.List;
 
 /**
  * A kérdéseket és válaszokat tartalmazó adatbázist
- * feldolgozó iterfész.
+ * feldolgozó interfész.
  * 
  */
 
