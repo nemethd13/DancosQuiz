@@ -8,13 +8,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *Ez az osztály magát az applikáció, a játék menetét menedzseli. 
+ *Ez az osztály magát az applikációt, a játék menetét menedzseli.
+ *
+ *
+ *
  */
 
 public class GameManager {
 
     private final String QUESTION_XML_FILE = "xml/Questions.xml";
-    
+
     private User currentUser = null;
     private String currentCategory;
     private QuestionDAO questionDAO;
@@ -28,7 +31,7 @@ public class GameManager {
      * az aktuális kérdés számot ,amit később arra használ,
      * hogy tudja, hogy hol jár éppen a játék.
      */
-    
+
     public GameManager() {
         questionDAO = new XmlQuestionDAO(QUESTION_XML_FILE);
 
@@ -37,11 +40,11 @@ public class GameManager {
 
     /**
      * Beállítja az aktuális játékos adatait.
-     * 
+     *
      * @param name a játékos neve
      * @param point a helyesen megválaszolt kérdések darabszáma
      */
-    
+
     public void setCurrentUser(String name, int point) {
         currentUser = new User(name, point);
     }
@@ -49,20 +52,20 @@ public class GameManager {
     /**
      * Visszaadja az aktuális , éppen játékban lévő
      * játékos nevét.
-     * 
-     * @return aktuális játékos neve 
+     *
+     * @return aktuális játékos neve
      */
-    
+
     public String getCurrentUserName() {
         return currentUser.getUser();
     }
 
     /**
      * Vissza adja az aktuális játkost , {@code User} objektumként.
-     * 
+     *
      * @return aktualis {@code User} objektum
      */
-    
+
     public User getCurrentUser() {
         return currentUser;
     }
@@ -70,10 +73,10 @@ public class GameManager {
     /**
      * Beolvassa a paraméterként kapott témájú kérdéseket
      * és az osztály {@code question} nevű listájába tárolja.
-     * 
-     * @param category beolvasni kívánt kategória 
+     *
+     * @param category beolvasni kívánt kategória
      */
-    
+
     public void setCurrentCategory(String category) {
         currentCategory = category;
 
@@ -82,23 +85,23 @@ public class GameManager {
 
     /**
      * Visszaadja az aktuális kérdéshez tartozó helyes választ.
-     * 
-     * @return aktuális helyes válasz 
+     *
+     * @return aktuális helyes válasz
      */
-    
+
     public String getRightAnswerWhenLoose() {
         return questions.get(currentQuestionIndex - 1).getCorrect();
     }
 
     /**
      * Visszaadja a soron következő kérdést , ezt mintaddig
-     * amig az aktuális kérdés indexe ({@code currentQuestionIndex}) 
+     * amig az aktuális kérdés indexe ({@code currentQuestionIndex})
      * kisebb mint az összes kérdés száma. Ha ez a <em>feltétel</em>
      * nem teljesül akkor a függvény <em>null</em> értékkel tér vissza.
-     * 
+     *
      * @return a soron következő kérdés vagy null
      */
-    
+
     public Question getNextQuestion() {
         if (currentQuestionIndex < questions.size()) {
             return questions.get(currentQuestionIndex++);
@@ -108,21 +111,21 @@ public class GameManager {
     }
 
     /**
-     * Eldönti , hogy a paraméterként kapott válasz-e 
+     * Eldönti , hogy a paraméterként kapott válasz-e
      * a helyes válasz a hozzá tartozó kérdésre.
-     * 
+     *
      * @param answer a vizsgálandó válasz
-     * 
+     *
      * @return true , ha a vizsgálandó válasz a helyes válasz
      */
-    
+
     public boolean isAnswerCorrect(String answer) {
         return answer.equals(questions.get(currentQuestionIndex - 1).getCorrect());
     }
 
     /**
      * Azt aktuális kérdés számát adja vissza.
-     * 
+     *
      * @return aktuális kérdés száma
      */
     public int getCurrentQuestionIndex() {
@@ -133,10 +136,10 @@ public class GameManager {
      * Visszaad egy {@code User} objektumokat tartalmazó
      * {@code ObservableList}-et ami az eredményeknél a
      * {@code TableView} feltöltéséhez szükséges.
-     * 
+     *
      * @return {@code User} objektumokat tartalmazó {@code ObservableList}
      */
-    
+
     public ObservableList<User> getResults() {
         XmlUserDAO xu = new XmlUserDAO("users.xml");
         List<User> lista = new ArrayList<>();
