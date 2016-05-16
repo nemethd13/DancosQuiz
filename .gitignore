@@ -4,3 +4,4 @@ users.xml
 userTest.xml
 .idea/
 *.iml
+nbactions.xml
