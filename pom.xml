@@ -14,7 +14,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
   </properties>
-  <description>It is a Quiz Game for a school project, in my 4th grade at University of Debrecen</description>
+  <description>Ez a quiz játék egy beadandó program , a debreceni egyetem informatika karán a 4. félévemben.</description>
   <organization>
     <name>Németh Dániel</name>
   </organization>
