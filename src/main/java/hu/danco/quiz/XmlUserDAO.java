@@ -1,8 +1,5 @@
 package hu.danco.quiz;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -21,29 +18,31 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 /**
  * Ez az osztály a UserDao implementációja.
- * 
+ *
  */
 
 public class XmlUserDAO implements UserDAO {
 
     private static final Logger logger = LoggerFactory.getLogger(XmlUserDAO.class);
+    private static final Logger logger_two = LoggerFactory.getLogger(XmlUserDAO.class);
 
      /**
      * Egy konstans változó, az {@code xml} fájl élérési útjának tárolására.
      */
-    
+
     private final String xmlFile;
 
      /**
      * Konstruktor egy {@code XmlQuestionDao} objektum létrehozására.
-     * 
+     *
      * @param xmlFile a feldolgozni kívánt {@code xml} fájl
      * elérési útvonala
      */
-    
+
     public XmlUserDAO(String xmlFile) {
         this.xmlFile = xmlFile;
     }
@@ -71,10 +70,13 @@ public class XmlUserDAO implements UserDAO {
                         Integer.parseInt(eElement.getElementsByTagName("questions").item(0).getTextContent())));
             }
 
+            logger.trace("Felhasználók beolvasása megtörtént a " + xmlFile + " fájlból");
+
             return listUsers;
+
         } catch (Exception e) {
 
-            logger.warn(" A fájl {} nem olvasható , nincsenek korábbi eredmények.", xmlFile);
+            logger_two.warn(" A fájl {} nem olvasható , nincsenek korábbi eredmények.", xmlFile);
 
             return new ArrayList<User>();
         }
@@ -113,9 +115,11 @@ public class XmlUserDAO implements UserDAO {
             DOMSource source = new DOMSource(doc);
             StreamResult result = new StreamResult(new File(xmlFile));
 
+
             // Output to console for testing
             transformer.transform(source, result);
 
+              logger.trace("Adatok kiírása történt a " + xmlFile + " fájlba.");
 
 
         } catch (ParserConfigurationException pce) {

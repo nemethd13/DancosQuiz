@@ -13,7 +13,8 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ChooseCategoryController extends AnchorPane implements Initializable {
 
@@ -32,6 +33,8 @@ public class ChooseCategoryController extends AnchorPane implements Initializabl
     @FXML
     private RadioButton firstRadioButton;
 
+    private static final Logger logger = LoggerFactory.getLogger(ChooseCategoryController.class);
+
 
     String getSelectedCategory() {
         if (firstRadioButton.isSelected()) {
@@ -47,6 +50,8 @@ public class ChooseCategoryController extends AnchorPane implements Initializabl
         if (category != null) {
 
             MainApp.gameManager.setCurrentCategory(category);
+
+            logger.info("Kiválasztott kategória: " + category);
 
             MainApp.startGame();
         }

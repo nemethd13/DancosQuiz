@@ -23,6 +23,8 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class GameController implements Initializable {
     @FXML
@@ -45,6 +47,9 @@ public class GameController implements Initializable {
     private VBox panel;
     @FXML
     private Label labelQuestion;
+
+    private static final Logger logger = LoggerFactory.getLogger(GameController.class);
+
 
     XmlUserDAO rx = new XmlUserDAO("users.xml");
     List<User> jatekos = new ArrayList<>();
@@ -87,12 +92,16 @@ public class GameController implements Initializable {
         if (rb4.isSelected()) {
             chosen = rb4.getText();
         }
+
+        logger.trace("A játékos választott egy választ.");
     }
 
     @FXML
     void handleButtonNextClick() throws IOException {
 
         if (MainApp.gameManager.isAnswerCorrect(chosen)) {
+
+          logger.info("Helyes válasz");
 
             if (MainApp.gameManager.getCurrentQuestionIndex() != 20) {
                 stepQuestion();
@@ -111,6 +120,8 @@ public class GameController implements Initializable {
 
         } else {
             MainApp.gameManager.setCurrentUser(MainApp.gameManager.getCurrentUserName(), MainApp.gameManager.getCurrentQuestionIndex() - 1);
+
+            logger.info("Rossz válasz!");
 
             jatekos.addAll(rx.getUsers());
             jatekos.add(MainApp.gameManager.getCurrentUser());

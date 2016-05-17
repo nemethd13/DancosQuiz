@@ -10,22 +10,25 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Ez az osztály a QuestionDAO interfész implementációja.
- * 
+ *
  */
 
 public class XmlQuestionDAO implements QuestionDAO {
 
+  private static final Logger logger = LoggerFactory.getLogger(XmlQuestionDAO.class);
     /**
      * Egy konstans változó, az {@code xml} fájl élérési útjának tárolására.
      */
     private final String xmlFile;
-    
+
     /**
      * Konstruktor egy {@code XmlQuestionDao} objektum létrehozására.
-     * 
+     *
      * @param xmlFile a feldolgozni kívánt {@code xml} fájl
      * elérési útvonala
      */
@@ -58,6 +61,7 @@ public class XmlQuestionDAO implements QuestionDAO {
                         eElement.getElementsByTagName("correct").item(0).getTextContent()));
             }
 
+
             return listQuestions;
         } catch (Exception e) {
             e.printStackTrace();
@@ -67,6 +71,7 @@ public class XmlQuestionDAO implements QuestionDAO {
     }
 
     public List<Question> readQuestions(String theme) {
+        logger.trace("Kérdések beolvasása megtörtént!");
         return readQuestions().stream()
                 .filter(x -> x.getTheme().equals(theme))
                 .collect(Collectors.toList());

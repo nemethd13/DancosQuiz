@@ -2,6 +2,9 @@ package hu.danco.controllers;
 
 import hu.danco.quiz.MainApp;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import hu.danco.quiz.XmlUserDAO;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -39,6 +42,7 @@ public class LoginController implements Initializable {
     @FXML
     private Label errorLabel;
 
+    private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
 
     @FXML
     void handleButtonStartClick() {
@@ -47,12 +51,15 @@ public class LoginController implements Initializable {
 
             MainApp.gameManager.setCurrentUser(nameInput.getText(),0);
 
+            logger.info(nameInput.getText() + " nevű játékos bejelentkezett.");
+
             MainApp.window.setScene(MainApp.SceneChooseCategory);
 
         } else {
 
             errorLabel.setText("Légyszíves add meg a neved!");
 
+            logger.warn("A továbblépéshez meg kell adnod egy felhasználó nevet!");
         }
 
     }
