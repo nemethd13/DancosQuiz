@@ -49,7 +49,7 @@ public class ChooseCategoryController extends AnchorPane implements Initializabl
 
         if (category != null) {
 
-            MainApp.gameManager.setCurrentCategory(category);
+            MainApp.getGameManager().setCurrentCategory(category);
 
             logger.info("Kiválasztott kategória: " + category);
 

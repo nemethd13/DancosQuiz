@@ -34,7 +34,7 @@ public class ResultsController implements Initializable {
 
     @FXML
     void handleButtonBackClick() {
-        MainApp.window.setScene(MainApp.SceneWelcome);
+        MainApp.getWindow().setScene(MainApp.getSceneWelcome());
     }
 
     @Override
@@ -42,7 +42,7 @@ public class ResultsController implements Initializable {
 
         user.setCellValueFactory(new PropertyValueFactory<>("user"));
         point.setCellValueFactory(new PropertyValueFactory<>("point"));
-        table.setItems(MainApp.gameManager.getResults());
+        table.setItems(MainApp.getGameManager().getResults());
 
         assert panel != null : "fx:id=\"panel\" was not injected: check your FXML file 'SceneResults.fxml'.";
         assert table != null : "fx:id=\"table\" was not injected: check your FXML file 'SceneResults.fxml'.";

@@ -17,33 +17,29 @@ import java.util.ResourceBundle;
 
 
 public class WelcomeController implements Initializable {
-    @FXML
-    private ResourceBundle resources;
-    @FXML
-    private URL location;
-    @FXML
-    private Button buttonResults;
-    @FXML
-    private Button buttonGame;
 
+  @FXML
+  private ResourceBundle resources;
+  @FXML
+  private URL location;
+  @FXML
+  private Button buttonResults;
+  @FXML
+  private Button buttonGame;
 
+  @FXML
+  void handleButtonGameAction(ActionEvent event) {
+    MainApp.getWindow().setScene(MainApp.getSceneLogIn());
+  }
 
-    @FXML
-    void handleButtonGameAction(ActionEvent event) {
+  @FXML
+  void handleButtonResultsAction(ActionEvent event) {
 
+    MainApp.getWindow().setScene(MainApp.getSceneResults());
+  }
 
-        MainApp.window.setScene(MainApp.SceneLogIn);
-    }
+  @Override
+  public void initialize(URL location, ResourceBundle resources) {
 
-    @FXML
-    void handleButtonResultsAction(ActionEvent event) {
-
-        MainApp.window.setScene(MainApp.SceneResults);
-    }
-
-
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-
-    }
+  }
 }

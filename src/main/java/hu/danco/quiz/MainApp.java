@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-/** 
+/**
  * A QuizGame applikáció main osztálya.
  */
 
@@ -21,22 +21,50 @@ public class MainApp extends Application {
 
     private static final Logger logger = LoggerFactory.getLogger(MainApp.class);
 
-    public static Stage window;
-    public Parent root;
-    public Parent second;
-    public Parent third;
-    public Parent fourth;
-    public Parent fifth;
-    public Parent sixth;
+    private static Stage window;
+    private Parent root;
+    private Parent second;
+    private Parent third;
+    private Parent fourth;
+    private Parent fifth;
+    private Parent sixth;
 
-    public static Scene SceneWelcome;
-    public static Scene SceneGame;
-    public static Scene SceneResults;
-    public static Scene SceneChooseCategory;
-    public static Scene SceneLogIn;
-    public static Scene SceneWin;
+    private static Scene sceneWelcome;
+    private static Scene sceneGame;
+    private static Scene sceneResults;
+    private static Scene sceneChooseCategory;
+    private static Scene sceneLogIn;
+    private static Scene sceneWin;
 
-    public static GameManager gameManager;
+    public static Scene getSceneResults() {
+      return sceneResults;
+    }
+
+    public static Scene getSceneLogIn() {
+      return sceneLogIn;
+    }
+
+    public static Scene getSceneWin() {
+      return sceneWin;
+    }
+
+    public static Scene getSceneChooseCategory() {
+      return sceneChooseCategory;
+    }
+
+    public static Scene getSceneWelcome() {
+      return sceneWelcome;
+    }
+
+    public static Stage getWindow() {
+      return window;
+    }
+
+    private static GameManager gameManager;
+
+    public static GameManager getGameManager() {
+      return gameManager;
+    }
 
     public static void startGame() {
         FXMLLoader loader = new FXMLLoader(
@@ -74,15 +102,15 @@ public class MainApp extends Application {
         fifth = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/SceneLogIn.fxml"));
         sixth = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/SceneWin.fxml"));
 
-        SceneWelcome = new Scene(root);
-        SceneChooseCategory = new Scene(second);
-        SceneResults = new Scene(third);
-        SceneGame = new Scene(fourth);
-        SceneLogIn = new Scene(fifth);
-        SceneWin = new Scene(sixth);
+        sceneWelcome = new Scene(root);
+        sceneChooseCategory = new Scene(second);
+        sceneResults = new Scene(third);
+        sceneGame = new Scene(fourth);
+        sceneLogIn = new Scene(fifth);
+        sceneWin = new Scene(sixth);
 
         window.setTitle("Danco's Quiz");
-        window.setScene(SceneWelcome);
+        window.setScene(sceneWelcome);
         window.show();
     }
 

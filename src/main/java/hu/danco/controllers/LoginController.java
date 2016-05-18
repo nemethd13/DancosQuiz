@@ -49,11 +49,11 @@ public class LoginController implements Initializable {
 
         if (!nameInput.getText().equals("")) {
 
-            MainApp.gameManager.setCurrentUser(nameInput.getText(),0);
+            MainApp.getGameManager().setCurrentUser(nameInput.getText(),0);
 
             logger.info(nameInput.getText() + " nevű játékos bejelentkezett.");
 
-            MainApp.window.setScene(MainApp.SceneChooseCategory);
+            MainApp.getWindow().setScene(MainApp.getSceneChooseCategory());
 
         } else {
 

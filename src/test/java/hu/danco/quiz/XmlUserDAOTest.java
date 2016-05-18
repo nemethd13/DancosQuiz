@@ -9,37 +9,37 @@ import static org.junit.Assert.*;
 
 public class XmlUserDAOTest {
 
-    @Test
-    public void testGetUsers() {
-        XmlUserDAO instance = new XmlUserDAO("src/test/resources/UsersTest.xml");
+  @Test
+  public void testGetUsers() {
+    XmlUserDAO instance = new XmlUserDAO("src/test/resources/UsersTest.xml");
 
-        User u = new User("Dana", 16);
+    User u = new User("Dana", 16);
 
-        List<User> expResult = new ArrayList<User>();
+    List<User> expResult = new ArrayList<User>();
 
-        expResult.add(u);
+    expResult.add(u);
 
-        List<User> result = instance.getUsers();
+    List<User> result = instance.getUsers();
 
-        assertEquals("Egy felhasználót várunk, ami megegyezik a létrehozottal", expResult, result);
+    assertEquals("Egy felhasználót várunk, ami megegyezik a létrehozottal", expResult, result);
 
-    }
+  }
 
-    @Test
-    public void testPresistUsers() {
-        XmlUserDAO instance = new XmlUserDAO("userTest.xml");
+  @Test
+  public void testPresistUsers() {
+    XmlUserDAO instance = new XmlUserDAO("userTest.xml");
 
-        User u = new User("Test", 10);
+    User u = new User("Test", 10);
 
-        List<User> expResult = new ArrayList<User>();
+    List<User> expResult = new ArrayList<User>();
 
-        expResult.add(u);
+    expResult.add(u);
 
-        instance.persistUsers(expResult);
+    instance.persistUsers(expResult);
 
-        List<User> result = instance.getUsers();
+    List<User> result = instance.getUsers();
 
-        assertEquals("Egy felhasználót várunk, ami megegyezik a kiírt felhasználóval", expResult, result);
+    assertEquals("Egy felhasználót várunk, ami megegyezik a kiírt felhasználóval", expResult, result);
 
-    }
+  }
 }

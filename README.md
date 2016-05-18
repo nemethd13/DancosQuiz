@@ -1,2 +1,2 @@
 # Danco's Quiz
-It is a school project for me in my 4th semester in University of Debrecen.
+Ez a quiz játék egy beadandó program , a debreceni egyetem informatika karán a 4. félévemben.

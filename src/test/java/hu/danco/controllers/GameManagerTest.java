@@ -1,6 +1,3 @@
-/*
-* Copyright 2016 danco
-*/
 package hu.danco.controllers;
 
 import hu.danco.quiz.Question;
@@ -10,10 +7,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;
 
-/**
-*
-* @author Németh Dániel
-*/
 public class GameManagerTest {
 
   private GameManager gameManager;
