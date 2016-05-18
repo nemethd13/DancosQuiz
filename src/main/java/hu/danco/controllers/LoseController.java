@@ -9,6 +9,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
+/**
+*Az applikáció befejezés {@code Scene}-jének a {@code Controller} osztálya.
+*/
+
 public class LoseController implements Initializable {
 
   @FXML
@@ -21,17 +25,30 @@ public class LoseController implements Initializable {
   private Button buttonExit;
   @FXML
   private Label text;
+
+  /**
+  *handleExitButtonClick() függvény.
+  */
+
   @FXML
   void handleExitButtonClick() {
     MainApp.getWindow().close();
   }
 
+  /**
+  *initData() függvény.
+  *
+  *@param helyes helyes válasz
+  */
   public void initData(String helyes) {
     if (rightAnswer != null) {
       rightAnswer.setText(helyes);
     }
   }
 
+  /**
+  *initialize() függvény.
+  */
   @Override
   public void initialize(URL location, ResourceBundle resources) {
 

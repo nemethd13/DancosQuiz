@@ -16,6 +16,10 @@ import javafx.scene.layout.Pane;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+*Téma választás {@code Scene}-jének a {@code Controller} osztálya.
+*/
+
 public class ChooseCategoryController extends AnchorPane implements Initializable {
 
     @FXML
@@ -35,14 +39,18 @@ public class ChooseCategoryController extends AnchorPane implements Initializabl
 
     private static final Logger logger = LoggerFactory.getLogger(ChooseCategoryController.class);
 
-
+    /**
+    *getSelectedCategory függvény.
+    */
     String getSelectedCategory() {
         if (firstRadioButton.isSelected()) {
             return "Biológia";
         } else
             return "Irodalom";
     }
-
+    /**
+    *handleButtonContinueClick függvény.
+    */
     @FXML
     void handleButtonContinueClick() {
         String category = getSelectedCategory();
@@ -57,7 +65,9 @@ public class ChooseCategoryController extends AnchorPane implements Initializabl
         }
     }
 
-
+    /**
+    *initialize függvény.
+    */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         assert categoriesToggleGroup != null : "fx:id=\"categoriesToggleGroup\" was not injected: check your FXML file 'SceneChooseCategory.fxml'.";

@@ -15,7 +15,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
-
+/**
+*Az üdvözlés {@code Scene}-jének a {@code Controller} osztálya.
+*/
 public class WelcomeController implements Initializable {
 
   @FXML
@@ -27,17 +29,26 @@ public class WelcomeController implements Initializable {
   @FXML
   private Button buttonGame;
 
+  /**
+  *handleButtonGameAction() függvény.
+  */
   @FXML
   void handleButtonGameAction(ActionEvent event) {
     MainApp.getWindow().setScene(MainApp.getSceneLogIn());
   }
 
+  /**
+  *handleButtonResultsAction() függvény.
+  */
   @FXML
   void handleButtonResultsAction(ActionEvent event) {
 
     MainApp.getWindow().setScene(MainApp.getSceneResults());
   }
 
+  /**
+  *initialize() függvény.
+  */
   @Override
   public void initialize(URL location, ResourceBundle resources) {
 

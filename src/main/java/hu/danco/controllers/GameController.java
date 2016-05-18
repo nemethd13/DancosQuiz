@@ -25,7 +25,9 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+/**
+*A Játék fő {@code Scene}-jének a {@code Controller} osztálya.
+*/
 public class GameController implements Initializable {
 
   @FXML
@@ -59,6 +61,9 @@ public class GameController implements Initializable {
 
   private String chosen = "";
 
+  /**
+  *initData() függvény.
+  */
   public void initData() {
     stepQuestion();
   }
@@ -77,7 +82,9 @@ public class GameController implements Initializable {
     rb3.setText(q.getAnswerC());
     rb4.setText(q.getAnswerD());
   }
-
+  /**
+  *handleOption() függvény.
+  */
   @FXML
   public void handleOption() {
 
@@ -96,7 +103,9 @@ public class GameController implements Initializable {
 
     logger.trace("A játékos választott egy választ.");
   }
-
+  /**
+  *handleButtonNextClick() függvény.
+  */
   @FXML
   void handleButtonNextClick() throws IOException {
 
@@ -146,7 +155,9 @@ public class GameController implements Initializable {
       stage.show();
     }
   }
-
+  /**
+  *initialize függvény.
+  */
   @Override
   public void initialize(URL location, ResourceBundle resources) {
 

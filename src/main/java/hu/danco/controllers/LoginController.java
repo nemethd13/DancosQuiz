@@ -20,60 +20,70 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
-
+/**
+*A bejelentkezés {@code Scene}-jének a {@code Controller} osztálya.
+*/
 public class LoginController implements Initializable {
 
-    @FXML
-    private ResourceBundle resources;
-    @FXML
-    private URL location;
-    @FXML
-    private Text txt2;
-    @FXML
-    private Text txt1;
-    @FXML
-    private Button buttonStart;
-    @FXML
-    private Pane panel;
-    @FXML
-    private VBox errVBox;
-    @FXML
-    private TextField nameInput;
-    @FXML
-    private Label errorLabel;
+  @FXML
+  private ResourceBundle resources;
+  @FXML
+  private URL location;
+  @FXML
+  private Text txt2;
+  @FXML
+  private Text txt1;
+  @FXML
+  private Button buttonStart;
+  @FXML
+  private Pane panel;
+  @FXML
+  private VBox errVBox;
+  @FXML
+  private TextField nameInput;
+  @FXML
+  private Label errorLabel;
 
-    private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
+  private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
 
-    @FXML
-    void handleButtonStartClick() {
+  /**
+  *handleButtonStartClick() függvény.
+  */
 
-        if (!nameInput.getText().equals("")) {
 
-            MainApp.getGameManager().setCurrentUser(nameInput.getText(),0);
+  @FXML
+  void handleButtonStartClick() {
 
-            logger.info(nameInput.getText() + " nevű játékos bejelentkezett.");
+    if (!nameInput.getText().equals("")) {
 
-            MainApp.getWindow().setScene(MainApp.getSceneChooseCategory());
+      MainApp.getGameManager().setCurrentUser(nameInput.getText(),0);
 
-        } else {
+      logger.info(nameInput.getText() + " nevű játékos bejelentkezett.");
 
-            errorLabel.setText("Légyszíves add meg a neved!");
+      MainApp.getWindow().setScene(MainApp.getSceneChooseCategory());
 
-            logger.warn("A továbblépéshez meg kell adnod egy felhasználó nevet!");
-        }
+    } else {
 
+      errorLabel.setText("Légyszíves add meg a neved!");
+
+      logger.warn("A továbblépéshez meg kell adnod egy felhasználó nevet!");
     }
 
+  }
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
+  /**
+  *initialize() függvény.
+  */
 
-        assert txt2 != null : "fx:id=\"txt2\" was not injected: check your FXML file 'SceneLogIn.fxml'.";
-        assert txt1 != null : "fx:id=\"txt1\" was not injected: check your FXML file 'SceneLogIn.fxml'.";
-        assert buttonStart != null : "fx:id=\"buttonStart\" was not injected: check your FXML file 'SceneLogIn.fxml'.";
-        assert panel != null : "fx:id=\"panel\" was not injected: check your FXML file 'SceneLogIn.fxml'.";
-        assert nameInput != null : "fx:id=\"nameInput\" was not injected: check your FXML file 'SceneLogIn.fxml'.";
+  @Override
+  public void initialize(URL location, ResourceBundle resources) {
 
-    }
+    assert txt2 != null : "fx:id=\"txt2\" was not injected: check your FXML file 'SceneLogIn.fxml'.";
+    assert txt1 != null : "fx:id=\"txt1\" was not injected: check your FXML file 'SceneLogIn.fxml'.";
+    assert buttonStart != null : "fx:id=\"buttonStart\" was not injected: check your FXML file 'SceneLogIn.fxml'.";
+    assert panel != null : "fx:id=\"panel\" was not injected: check your FXML file 'SceneLogIn.fxml'.";
+    assert nameInput != null : "fx:id=\"nameInput\" was not injected: check your FXML file 'SceneLogIn.fxml'.";
+
+  }
 
 }
