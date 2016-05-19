@@ -8,17 +8,22 @@
   <artifactId>QuizGame</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
+
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
   </properties>
+
   <description>Ez a quiz játék egy beadandó program , a debreceni egyetem informatika karán a 4. félévemben.</description>
+
   <organization>
     <name>Németh Dániel</name>
   </organization>
+
   <inceptionYear>2016</inceptionYear>
+
   <developers>
     <developer>
       <id>nemethd13</id>
@@ -26,15 +31,18 @@
       <email>nemethd13@gmail.com</email>
     </developer>
   </developers>
+
   <scm>
     <url>https://github.com/nemethd13/DancosQuiz</url>
   </scm>
+
   <licenses>
     <license>
       <name>MIT License</name>
       <url>https://opensource.org/licenses/MIT</url>
     </license>
   </licenses>
+
   <dependencies>
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -54,6 +62,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
   <build>
     <plugins>
       <plugin>
@@ -118,6 +127,7 @@
       </plugin>
     </plugins>
   </build>
+
   <reporting>
     <plugins>
       <plugin>
@@ -153,4 +163,5 @@
       </plugin>
     </plugins>
   </reporting>
+
 </project>
