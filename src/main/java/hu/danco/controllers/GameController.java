@@ -108,7 +108,10 @@ public class GameController implements Initializable {
   */
   @FXML
   void handleButtonNextClick() throws IOException {
-
+    if (!(rb1.isSelected() || rb2.isSelected() || rb3.isSelected() || rb4.isSelected()))
+    {
+      return;
+    }
     if (MainApp.getGameManager().isAnswerCorrect(chosen)) {
 
       logger.info("Helyes válasz");
