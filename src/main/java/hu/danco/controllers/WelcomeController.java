@@ -33,7 +33,7 @@ public class WelcomeController implements Initializable {
   *handleButtonGameAction() függvény.
   */
   @FXML
-  void handleButtonGameAction(ActionEvent event) {
+  void handleButtonGameAction() {
     MainApp.getWindow().setScene(MainApp.getSceneLogIn());
   }
 
@@ -41,7 +41,7 @@ public class WelcomeController implements Initializable {
   *handleButtonResultsAction() függvény.
   */
   @FXML
-  void handleButtonResultsAction(ActionEvent event) {
+  void handleButtonResultsAction() {
 
     MainApp.getWindow().setScene(MainApp.getSceneResults());
   }

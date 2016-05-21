@@ -41,6 +41,7 @@ public class ChooseCategoryController extends AnchorPane implements Initializabl
 
     /**
     *getSelectedCategory függvény.
+    *@return választott kategória
     */
     String getSelectedCategory() {
         if (firstRadioButton.isSelected()) {
